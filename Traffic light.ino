@@ -1,36 +1,37 @@
 // C++ code
-//
+int red =5;
+int green = 7;
+int yellow = 6;
 void setup()
 {
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
+  pinMode(red, OUTPUT);
+  pinMode(yellow, OUTPUT);
+  pinMode(green, OUTPUT);
   
 }
-
 void loop()
 {
   // Red
-  digitalWrite(5, HIGH);
-  digitalWrite(6, LOW);
-  digitalWrite(7, LOW);
+  digitalWrite(red, HIGH);
+  digitalWrite(yellow, LOW);
+  digitalWrite(green, LOW);
   delay(4500);
 
   // Red + Yellow
-  digitalWrite(5, HIGH);
-  digitalWrite(6, HIGH);
-  digitalWrite(7, LOW);
+  digitalWrite(red, HIGH);
+  digitalWrite(yellow, HIGH);
+  digitalWrite(green, LOW);
   delay(2000);
 
   // Green
-  digitalWrite(5, LOW);
-  digitalWrite(6, LOW);
-  digitalWrite(7, HIGH);
+  digitalWrite(red, LOW);
+  digitalWrite(yellow, LOW);
+  digitalWrite(green, HIGH);
   delay(6000);
 
   // Yellow
-  digitalWrite(5, LOW);
-  digitalWrite(6, HIGH);
-  digitalWrite(7, LOW);
+  digitalWrite(red, LOW);
+  digitalWrite(yellow, HIGH);
+  digitalWrite(green, LOW);
   delay(2000);
 }
